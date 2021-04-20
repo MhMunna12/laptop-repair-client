@@ -9,7 +9,7 @@ const Manage = () => {
     const [services,setServices] = useState([]);
     
     const handleDelete = (id) =>{
-        fetch(`http://localhost:6060/deleteService/${id}`,{
+        fetch(`https://quiet-inlet-08578.herokuapp.com/deleteService/${id}`,{
             method:'DELETE',
             headers: {
                 'Content-Type' : 'application/json'
@@ -25,7 +25,7 @@ const Manage = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:6060/services')
+        fetch('https://quiet-inlet-08578.herokuapp.com/services')
         .then(res => res.json())
         .then(data =>{
           setServices(data)

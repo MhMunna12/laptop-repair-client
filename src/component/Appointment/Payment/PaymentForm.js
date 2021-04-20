@@ -36,7 +36,7 @@ const PaymentFrom = ({serviceInfo}) => {
     }
   };
   const storeInDatabase = (payment) =>{
-     fetch('http://localhost:6060/addServicesOrders', {
+     fetch('https://quiet-inlet-08578.herokuapp.com/addServicesOrders', {
             method:'POST',
             headers:{
                 'content-type' : 'application/json'

@@ -15,7 +15,7 @@ const OrderList = () => {
 
 
     const updateStatus = (status) => {
-        fetch(`http://localhost:6060/update/${itemId}`, {
+        fetch(`https://quiet-inlet-08578.herokuapp.com/update/${itemId}`, {
             method: 'PATCH',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(status)
@@ -34,7 +34,7 @@ const OrderList = () => {
         setTatus(status);
     }
     useEffect(() =>{
-        fetch('http://localhost:6060/orderList')
+        fetch('https://quiet-inlet-08578.herokuapp.com/orderList')
         .then(res => res.json())
         .then(data => setOrderList(data))
     },[orderList])

@@ -14,7 +14,7 @@ const Review = () => {
             imageUrl: imageUrl
         }
         console.log(data);
-        fetch('http://localhost:6060/addReview',{
+        fetch('https://quiet-inlet-08578.herokuapp.com/addReview',{
             method:'POST',
             headers: {
                 'content-type' : 'application/json'

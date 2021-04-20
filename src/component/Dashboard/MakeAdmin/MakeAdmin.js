@@ -17,7 +17,7 @@ const MakeAdmin = () => {
         setAdminInfo(newAdminInfo);
         console.log(newAdminInfo);
 
-        fetch('http://localhost:6060/addAdmin',{
+        fetch('https://quiet-inlet-08578.herokuapp.com/addAdmin',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

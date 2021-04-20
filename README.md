@@ -6,8 +6,8 @@ This Application Fullstack and fully dynamic.
 
 Heroku Link: [https://stormy-brushlands-24684.herokuapp.com]
 
-Font-end code link: [https://github.com/Porgramming-Hero-web-course/full-stack-client-MhMunna12]
+Font-end code link: [https://github.com/Porgramming-Hero-web-course/complete-website-client-MhMunna12]
 
-Back-End Code Link: [https://github.com/Porgramming-Hero-web-course/full-stack-server-MhMunna12]
+Back-End Code Link: [https://github.com/Porgramming-Hero-web-course/complete-website-server-MhMunna12]
 
-Website Link: [https://book-library-a7b6e.web.app/];
+Website Link: [https://laptop-repair-ac31e.web.app/];

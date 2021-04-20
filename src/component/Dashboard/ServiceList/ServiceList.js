@@ -9,15 +9,15 @@ const ServiceList = () => {
     const [serviceOrder, setServiceOrder] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:6060/serviceOrder?email=`+loggedInUser.email)
+        fetch(`https://quiet-inlet-08578.herokuapp.com/serviceOrder?email=`+loggedInUser.email)
         .then(res =>res.json())
         .then(data => setServiceOrder(data))
     },[])
     return (
         <div className = 'row'>
             <Sidebar/>
-            <div className = 'col-md-10'>
-                <div className="orders">
+            <div className = 'col-md-10 orders'>
+                <div className="">
                         <div className="d-flex justify-content-between mb-2">
                             <div>
                                 <h3>Orders</h3>

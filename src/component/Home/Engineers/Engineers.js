@@ -5,7 +5,7 @@ const Engineers = () => {
     const [engineers, setEngineers] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:6060/engineers')
+        fetch('https://quiet-inlet-08578.herokuapp.com/engineers')
         .then(res => res.json())
         .then(data => setEngineers(data))
     },[])

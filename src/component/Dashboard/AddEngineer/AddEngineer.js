@@ -15,7 +15,7 @@ const AddExperts = () => {
             imageUrl: imageUrl
         }
         // console.log(expertsData);
-        fetch('http://localhost:6060/addEngineers',{
+        fetch('https://quiet-inlet-08578.herokuapp.com/addEngineers',{
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

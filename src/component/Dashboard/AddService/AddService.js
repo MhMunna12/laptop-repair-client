@@ -15,7 +15,7 @@ const AddService = () => {
             imageUrl: imageUrl
         };
         console.log(data);
-        const url =`http://localhost:6060/addServices`;
+        const url =`https://quiet-inlet-08578.herokuapp.com/addServices`;
         fetch(url , {
             method: 'POST',
             headers: {

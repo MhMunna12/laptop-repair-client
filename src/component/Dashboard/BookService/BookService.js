@@ -12,10 +12,13 @@ const BookService = () => {
     const [serviceInfo, setServiceInfo] = useState({});
     
     const {_id} = useParams();
+    console.log('id',_id);
+    console.log('sakil',_id);
     const [service, setService] = useState({})
 
     useEffect(()=>{
-        fetch(`http://localhost:6060/service/${_id}`)
+        fetch(`https://quiet-inlet-08578.herokuapp.com/service/${_id}`)
+        
         .then(res => res.json())
         .then(data =>setService(data))
     },[])

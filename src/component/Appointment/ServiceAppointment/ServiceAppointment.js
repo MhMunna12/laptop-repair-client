@@ -4,7 +4,7 @@ import ServiceCard from '../ServiceCard/ServiceCard';
 const ServiceAppointment = ({date}) => {
     const [appServices, setAppServices] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:6060/services')
+        fetch('https://quiet-inlet-08578.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setAppServices(data))
     },[])
