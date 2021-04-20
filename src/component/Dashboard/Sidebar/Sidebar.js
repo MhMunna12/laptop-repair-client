@@ -2,7 +2,7 @@ import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCashRegister, faClipboardList, faCoffee, faEraser, faPlus, faShoppingCart, faThList, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCashRegister, faClipboardList,faPlus, faShoppingCart, faThList, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 
 import './Sidebar.css';
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
                         <div>
                             <li className='mb-3 text-white'>
                                 <FontAwesomeIcon icon={faShoppingCart} />
-                                <Link className='text-white ms-1' to='/service/:_id'>Service</Link>
+                                <Link className='text-white ms-1' to='/service/:_id'>Book Service</Link>
                             </li>
                             <li className='mb-3 text-white'>
                                 <FontAwesomeIcon icon={faClipboardList} />

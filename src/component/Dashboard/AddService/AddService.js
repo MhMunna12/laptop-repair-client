@@ -49,7 +49,7 @@ const AddService = () => {
     return (
         <div className="row ">
             <Sidebar/>
-            <div className="col-md-10">
+            <div className="col-md-10 body-content">
                 <div className="add-service">
                         <h4>Add Service</h4>
                     <form onSubmit={handleSubmit(onSubmit)}>

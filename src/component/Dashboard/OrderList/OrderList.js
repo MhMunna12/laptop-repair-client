@@ -41,7 +41,7 @@ const OrderList = () => {
     return (
         <div className = 'row'>
             <Sidebar/>
-            <div className = 'col-md-10'>
+            <div className = 'col-md-10 body-content'>
                 <div className="orders-list">
                         <div className="d-flex justify-content-between mb-2">
                             <div>
@@ -61,6 +61,7 @@ const OrderList = () => {
                                     <th>Service</th>
                                     <th>Pay With</th>
                                     <th>Status</th>
+                                    <th>Process</th>
                                 </tr>
                             </thead>
                             <tbody>

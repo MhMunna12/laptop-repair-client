@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { UserContext } from '../../../App';
-import BookService from '../BookService/BookService';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
-import Review from '../Review/Review';
 import ServiceList from '../ServiceList/ServiceList';
 
 const Dashboard = () => {

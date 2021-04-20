@@ -18,9 +18,9 @@ import BookService from "./component/Dashboard/BookService/BookService";
 import ServiceList from "./component/Dashboard/ServiceList/ServiceList";
 import Manage from "./component/Dashboard/Manage/Manage";
 import MakeAdmin from "./component/Dashboard/MakeAdmin/MakeAdmin";
-import Navbar from "./component/Shared/Navbar/Navbar";
 import AddEngineer from './component/Dashboard/AddEngineer/AddEngineer'
 import OrderList from "./component/Dashboard/OrderList/OrderList";
+import Menubar from "./component/Shared/Menubar/Menubar";
 
 
 
@@ -33,7 +33,7 @@ function App() {
     <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
       <Router>
       {/* <p>{loggedInUser.name}</p> */}
-        <Navbar/>
+        <Menubar/>
         <Switch>
           <Route exact path='/'>
             <Home/>

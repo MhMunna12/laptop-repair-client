@@ -1,8 +1,8 @@
-.add-book form{
+.book-service form{
     padding: 20px;
-    background-color: lightgray;
+    background-color: rgb(252, 246, 246);
     border-radius: 10px;
 }
-.add-book{
+.book-service{
     margin-top: 5px;
 }

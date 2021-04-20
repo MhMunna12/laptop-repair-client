@@ -12,8 +12,7 @@ const BookService = () => {
     const [serviceInfo, setServiceInfo] = useState({});
     
     const {_id} = useParams();
-    console.log('id',_id);
-    console.log('sakil',_id);
+
     const [service, setService] = useState({})
 
     useEffect(()=>{
@@ -23,7 +22,6 @@ const BookService = () => {
         .then(data =>setService(data))
     },[])
     const {name, price} = service;
-    // console.log(service);
     
     const onSubmit = () =>{
         setConfirm(true)
@@ -38,8 +36,6 @@ const BookService = () => {
         newServiceInfo.servicePrice = price;
         newServiceInfo.status = 'pending';
         newServiceInfo.pay = 'Credit Card';
-        console.log('now',newServiceInfo);
-
         setServiceInfo(newServiceInfo);
     }
     
@@ -47,9 +43,9 @@ const BookService = () => {
         <div>
             <div className="row">
                 <Sidebar/>
-                <div className="col-md-10">
+                <div className="col-md-10 body-content">
                     <div className="book-service">
-                            <h4>Service</h4>
+                            <h4>Book Service</h4>
                         {
                             confirm ?
                             <div>

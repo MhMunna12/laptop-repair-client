@@ -15,7 +15,6 @@ const MakeAdmin = () => {
         const newAdminInfo = {...adminInfo}
         newAdminInfo.email = loggedInUser.email;
         setAdminInfo(newAdminInfo);
-        console.log(newAdminInfo);
 
         fetch('https://quiet-inlet-08578.herokuapp.com/addAdmin',{
             method: 'POST',
@@ -35,7 +34,7 @@ const MakeAdmin = () => {
     return (
         <div className="row">
             <Sidebar/>
-            <div className="col-md-10">
+            <div className="col-md-10 body-content">
                 <div className="admin">
                         <h4>Admin</h4>
                     <form onSubmit={handleSubmit(onSubmit)}>

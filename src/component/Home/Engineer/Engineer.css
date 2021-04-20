@@ -1,0 +1,6 @@
+.engineer-effect Img{
+    transition: all 1.5s ease;
+}
+.engineer-effect Img:hover{
+    transform: scale(1.2);
+}

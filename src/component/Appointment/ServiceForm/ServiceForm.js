@@ -31,7 +31,6 @@ const ServiceForm = ({modalIsOpen, closeModal, serviceOn, date, price}) => {
         newServiceInfo.email = loggedInUser.email;
         newServiceInfo.serviceName = serviceOn;
         newServiceInfo.servicePrice = price;
-        console.log(newServiceInfo);
         setServiceInfo(newServiceInfo);
      }
     return (

@@ -46,7 +46,7 @@ const Review = () => {
         <div>
             <div className="row">
                 <Sidebar/>
-                <div className="col-md-10">
+                <div className="col-md-10 body-content">
                     <div className="add-review">
                             <h4>Add Book</h4>
                         <form onSubmit={handleSubmit(onSubmit)}>

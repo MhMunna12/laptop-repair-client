@@ -14,7 +14,6 @@ const AddExperts = () => {
             position: data.post,
             imageUrl: imageUrl
         }
-        // console.log(expertsData);
         fetch('https://quiet-inlet-08578.herokuapp.com/addEngineers',{
             method: 'POST',
             headers: {
@@ -48,7 +47,7 @@ const AddExperts = () => {
     return (
         <div className="row">
             <Sidebar/> 
-            <div className="col-md-10">
+            <div className="col-md-10 body-content">
                 <div className="engineer">
                         <h4>Add Engineers</h4>
                     <form onSubmit={handleSubmit(onSubmit)}>
