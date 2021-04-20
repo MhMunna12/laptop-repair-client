@@ -21,6 +21,7 @@ import MakeAdmin from "./component/Dashboard/MakeAdmin/MakeAdmin";
 import AddEngineer from './component/Dashboard/AddEngineer/AddEngineer'
 import OrderList from "./component/Dashboard/OrderList/OrderList";
 import Menubar from "./component/Shared/Menubar/Menubar";
+import Contact from "./component/Home/Contact/Contact";
 
 
 
@@ -32,7 +33,6 @@ function App() {
   return (
     <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
       <Router>
-      {/* <p>{loggedInUser.name}</p> */}
         <Menubar/>
         <Switch>
           <Route exact path='/'>
@@ -41,6 +41,9 @@ function App() {
           <Route path='/home'>
             <Home/>
           </Route>
+          <PrivateRoute path = '/appointment'>
+            <Appointment/>
+          </PrivateRoute>
           <PrivateRoute path='/admin'>
             <MakeAdmin/>
           </PrivateRoute>
@@ -62,10 +65,9 @@ function App() {
           <PrivateRoute path='/service/:_id'>
             <BookService/>
           </PrivateRoute>
-          <PrivateRoute path = '/appointment'>
-            <Appointment/>
-          </PrivateRoute>
-          
+          <Route path='/contact'>
+            <Contact/>
+          </Route>
           <Route path='/login'>
             <Login/>
           </Route>

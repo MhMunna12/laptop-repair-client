@@ -6,12 +6,14 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import Services from '../Services/Services';
 import Testimonials from '../Testimonials/Testimonials';
 import Footer from '../../Shared/Footer/Footer';
+import Featured from '../Featured/Featured';
 
 const Home = () => {
     return (
         <div>
             <Header/> 
-            <Services/> 
+            <Services/>
+            <Featured/>
             <Testimonials/> 
             <Engineers/>
             <Contact/>

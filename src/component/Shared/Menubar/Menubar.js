@@ -18,7 +18,7 @@ const Menubar = () => {
                                 <Link to="/home" class="nav-link ms-5 active text-danger" aria-current="page">Home</Link>
                                 <Link to = "/dashboard" class="nav-link ms-5 text-primary">Dashboard</Link>
                                 <Link to = "/appointment" class="nav-link ms-5 text-primary">Service</Link>
-                                <Link to = "" class="nav-link ms-5 text-primary">Contact</Link>
+                                <Link to = "/contact" class="nav-link ms-5 text-primary">Contact</Link>
                                 {
                                     loggedInUser.name ?
                                     <Link className='mt-2' as={Link}>{loggedInUser.name} </Link>
